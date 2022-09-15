@@ -1,0 +1,55 @@
+---
+title: "Vaje 7-2.del"
+author: "Peter Muršič"
+date: "5.5.2020"
+output: beamer_presentation
+
+---
+
+# Header1 postane naslov slida
+
+## Naloga
+Rekreiraj vse na tej strani in tudi naslovno stran.
+Namig: to je beamer_presentation in ne html_document. Zaženi tidyverse paket, ampak ne prikaži nobene kode.
+
+Pozor: Če ni nobenega teksta med nobenim od # heading1 in # heading2 se nalovi malo zalomijo. V tem primeru je text na zadnjem slidu pri domači nalogi.
+
+
+## Oštevilčevanje in označevanje
+
+* prva točka
+* druga točka
+  + podtočka
+  1. prva podtočka 
+  2. druga podtočka
+1. prva točka
+3. a lahko preskočimo 2.?
+
+# Latex
+
+## Matematična formule z \LaTeX:
+To je matematična formula $a^2+b^2=c^2$, in tu je še ena $\sum_{i=1}^ni=\frac{n\cdot(n+1)}{2}$. Uporablja \LaTeX\ jezik, v katerem večin oukazov začnemo z \textbackslash\ in matematične formule začnemo in končamo z \$\. Matematične formule delujejo tudi v html_document, sledeče barve in velikost pisave pa ne. Inštraliraj [MikTex](https://miktex.org/download) da bo Latex delal.
+
+## Velikost pisave z \LaTeX :
+
+\tiny tiny
+\small small
+\LARGE LARGE
+\normalsize nazaj na normalsize
+
+
+## Barva pisave z \LaTeX:
+
+Vrtnice so \textcolor{red}{rdeče}, vijolice so \textcolor{blue}{modre}.
+
+# Domača naloga 5, do 13.5.2020 23:59, pozor imate samo 1 teden
+Ustvari html_document ali beamer_presentation z R Markdown, ki ima vsaj 2000 znakov (v .rmd datoteki). Morate vključiti:
+
+
+2. vsaj 3 kose R kode in vsaj 1 inline R izraz.
+
+
+
+9. hiperpovezavo
+
+Ne smete reciklirati primerov iz vaj ali predavanj. Oddajte .rmd in izhodno datoteko.

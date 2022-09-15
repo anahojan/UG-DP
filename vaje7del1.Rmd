@@ -1,0 +1,99 @@
+---
+title: "Vaje 7-1. del"
+author: "Peter Muršič"
+date: "5.5.2020"
+output: 
+  html_document: 
+    toc: yes
+    toc_float: yes
+
+---
+
+# A
+Poskusi rekreirati vse sam. Lahko spremeniš dele texta kot so ime in naslov. To je html_document.
+
+Za ustvariti nov odstavek, pusti eno vrstico prej prazno.
+```{r setup, include=TRUE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+Tu je zelo uporaben hiperlink do kompaktnega plonk lista za R Markdown:
+[klikni me](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+
+
+# B
+## GGPLOT
+Tu je ggplot
+```{r}
+ggplot(iris)+
+  geom_point(aes(x=Petal.Length,y=Petal.Width))
+```
+
+## Photos
+
+### Photos in text
+
+
+### Slike z R-jem
+to je s predavanj.
+```{r}
+
+```
+
+## Razpredelnice
+
+```{r}
+head(mtcars,5)
+```
+
+
+```{r}
+knitr::kable(mtcars[1:5, ], caption = 'Cars')
+```
+
+## Stolpci
+:::: {.columns style="display: flex;"}
+
+::: {.column width="25%"}
+```{r}
+a<-4+5
+```
+:::
+
+:::{.column width="75%"}
+ Vrednost spremenljivke a je `r a`
+:::
+
+::::
+
+
+# Profesor ni tega pokazal 
+## Urejanje pisave
+
+## urejanje v markdown
+*ležeče*
+**krepko**
+***krepkoležeče***
+potenciranje^2^
+~~prečrtano~~
+
+### velikost pisave v html
+<font size="1"> To je velikost pisave 1</font>
+<font size="4"> To je velikost pisave 4</font>
+
+
+### Barve pisave v html
+<p style="color:red">To je odstavek v rdeči barvi,</p> ampak ta ukaz ne dovoli pobarvati samo eno besedo.
+
+Ta text je <font color="blue">moder</font>, ampak html5 ga ne podpira</font>
+
+
+
+
+## Referencing
+Tukaj citiramo knjigo [@berlekamp2003winning] in članek [@doi:10.1002/jgt.22573] 
+Citing a book @berlekamp2003winning and an article @doi:10.1002/jgt.22573. Če jih ne citiramo se ne bojo prikazali na koncu, razen če uporabimo določene trike. Dobi Bibtex informacije na spletu in jih združi v ime.bib. Nato dodaj v YAML, brez presledko
+
+link-citations: yes   
+
+# Literatura
